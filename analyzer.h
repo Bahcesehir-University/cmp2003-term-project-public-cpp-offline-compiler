@@ -23,6 +23,8 @@
 #include <array>
 
 
+// ===================== analyzer.h (inlined) =====================
+
 using namespace std;
 
 struct ZoneCount {
@@ -94,5 +96,3 @@ private:
         return true;
     }
 };
-
-
