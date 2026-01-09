@@ -281,5 +281,3 @@ TEST_CASE("C3", "[C3]") {
 
     std::remove(path.c_str());
 }
-
-
