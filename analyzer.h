@@ -25,6 +25,7 @@
 #include <algorithm>
 #include <unordered_map>
 #include <array>
+#include <cstddef>
 
 using namespace std;
 
@@ -99,3 +100,4 @@ private:
 };
 
 #endif
+
