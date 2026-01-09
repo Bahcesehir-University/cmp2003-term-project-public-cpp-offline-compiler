@@ -1,3 +1,7 @@
+#ifndef TRIP_ANALYZER_H
+#define TRIP_ANALYZER_H
+
+// ===================== YOUR LIBRARY IMPORTS =====================
 #include <map>
 #include <set>
 #include <list>
@@ -21,9 +25,6 @@
 #include <algorithm>
 #include <unordered_map>
 #include <array>
-
-
-// ===================== analyzer.h (inlined) =====================
 
 using namespace std;
 
@@ -96,3 +97,5 @@ private:
         return true;
     }
 };
+
+#endif
