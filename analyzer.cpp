@@ -1,10 +1,3 @@
-Kodunun mantığını değiştirmeden, sadece analyzer.h dosyasını dahil ederek (include) oluşturulmuş analyzer.cpp dosyası aşağıdadır.
-
-Bu dosyada TripAnalyzer sınıfının fonksiyonlarının gövdeleri ve programı çalıştıran main fonksiyonu bulunur.
-
-analyzer.cpp
-C++
-
 #include "analyzer.h"
 #include <iostream>
 
@@ -158,3 +151,4 @@ int main() {
 
     return 0;
 }
+
