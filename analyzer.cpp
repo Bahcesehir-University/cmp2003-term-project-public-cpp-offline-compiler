@@ -1,3 +1,13 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <unordered_map>
+#include <array>
+#include <algorithm>
+#include <queue>
+#include <cctype>
+
+
 void TripAnalyzer::ingestStdin() {
     zoneCounts.clear();
     slotCounts.clear();
@@ -129,3 +139,4 @@ vector<SlotCount> TripAnalyzer::topBusySlots(int k) const {
     if ((int)res.size() > k) res.resize(k);
     return res;
 }
+
