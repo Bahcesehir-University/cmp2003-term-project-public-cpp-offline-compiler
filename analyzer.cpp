@@ -23,6 +23,8 @@
 #include <array>
 
 
+// ===================== analyzer.cpp (inlined) =====================
+
 void TripAnalyzer::ingestStdin() {
     zoneCounts.clear();
     slotCounts.clear();
@@ -154,5 +156,3 @@ vector<SlotCount> TripAnalyzer::topBusySlots(int k) const {
     if ((int)res.size() > k) res.resize(k);
     return res;
 }
-
-
