@@ -1,29 +1,16 @@
-#include <map>
-#include <set>
-#include <list>
-#include <cmath>
-#include <ctime>
-#include <deque>
-#include <queue>
-#include <stack>
-#include <string>
-#include <bitset>
-#include <cstdio>
-#include <limits>
-#include <vector>
-#include <climits>
-#include <cstring>
-#include <cstdlib>
-#include <fstream>
-#include <numeric>
-#include <sstream>
+Kodunun mantığını değiştirmeden, sadece analyzer.h dosyasını dahil ederek (include) oluşturulmuş analyzer.cpp dosyası aşağıdadır.
+
+Bu dosyada TripAnalyzer sınıfının fonksiyonlarının gövdeleri ve programı çalıştıran main fonksiyonu bulunur.
+
+analyzer.cpp
+C++
+
+#include "analyzer.h"
 #include <iostream>
-#include <algorithm>
-#include <unordered_map>
-#include <array>
 
+using namespace std;
 
-// ===================== analyzer.cpp (inlined) =====================
+// ===================== analyzer.cpp Implementation =====================
 
 void TripAnalyzer::ingestStdin() {
     zoneCounts.clear();
@@ -155,4 +142,19 @@ vector<SlotCount> TripAnalyzer::topBusySlots(int k) const {
 
     if ((int)res.size() > k) res.resize(k);
     return res;
+}
+
+int main() {
+    TripAnalyzer analyzer;
+    analyzer.ingestStdin();
+
+    cout << "TOP_ZONES\n";
+    for (auto& z : analyzer.topZones())
+        cout << z.zone << "," << z.count << "\n";
+
+    cout << "TOP_SLOTS\n";
+    for (auto& s : analyzer.topBusySlots())
+        cout << s.zone << "," << s.hour << "," << s.count << "\n";
+
+    return 0;
 }
