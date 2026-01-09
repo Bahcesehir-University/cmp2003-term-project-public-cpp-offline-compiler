@@ -1,6 +1,7 @@
 #include "analyzer.h"
+#include "analyzer.cpp"
 #include "catch_amalgamated.hpp"
-
+#include <cstddef>
 #include <fstream>
 #include <string>
 #include <vector>
@@ -281,3 +282,4 @@ TEST_CASE("C3", "[C3]") {
 
     std::remove(path.c_str());
 }
+
